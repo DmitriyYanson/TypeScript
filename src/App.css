@@ -1,15 +1,5 @@
 .App {
   display: flex;
-}
-
-.Text {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.74);
-  border-radius: 25px;
-  padding: 20px;
-  font-size: 25px;
+  flex-direction: column;
+  flex: 1;
 }

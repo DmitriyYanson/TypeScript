@@ -1,28 +1,23 @@
-import "./styles.css";
-import Input from "../Input/Input";
-import Button from "components/Button/Button";
-
-function LoginForm() {
-  return (
-    <div className="loginform-wrapper">
-      <p className="loginform-name">Login form</p>
-      <div className="inputs-container">
-        <Input
-          name="login-email"
-          type="email"
-          placeholder="Enter your email"
-          label="Email"
-        />
-        <Input
-          name="login-password"
-          type="password"
-          placeholder="Enter your password"
-          label="Password"
-        />
-      </div>
-      <Button type="submit" name="Login" />
-    </div>
-  );
+.loginform-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 590px;
+  height: fit-content;
+  padding: 60px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
 }
 
-export default LoginForm;
+.loginform-name {
+  font-size: 24px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
